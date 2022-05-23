@@ -17,14 +17,4 @@ Accueil
     {%endfor%}
 </table>
 
-    <table>
-    {% for l in liste1 %}
-    <tr class="tableau"><td>{{l}}</td>
-        <td><a href="/stockpaire/deletev/{{l.id}}">Supprimer</a></td>
-        <td><a href="/stockpaire/updateville/{{l.id}}">Update</a></td>
-        <td><a href="/stockpaire/afficheville/{{l.id}}">Affiche</a></td>
-    </tr>
-    {%endfor%}
-</table>
-
 {% endblock %}

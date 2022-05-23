@@ -7,6 +7,28 @@ color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
+a:link
+{
+    font-weight: bold;
+ text-decoration:none;
+}
+.p1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.titre1 {
+    text-decoration: underline;
+    color: beige;
+    text-align: center;
+    border-style: dashed;
+    border-color: beige;
+    border: azure;
+}
+
+p {
+    margin-left:10px ;
+}
 nav {
 padding: 10px;
 background: white;

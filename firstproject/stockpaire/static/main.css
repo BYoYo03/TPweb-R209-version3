@@ -1,10 +1,33 @@
 body {
-background:#E4E4E4;
+background:darkgrey;
 font-family: 'Montserrat', sans-serif;
 margin: 0px;
 padding:0px;
 }
 
+table {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-weight: bold;
+
+}
+a:link
+{
+  font-weight: bold;
+ text-decoration:none;
+}
+h1 {
+  text-align: center;
+  color: beige;
+   -webkit-text-stroke: 1px;
+}
+h2 {
+  text-align: center;
+    color: bisque;
+  -webkit-text-stroke: 1px;
+
+}
 nav {
 padding: 10px;
 background: grey;
