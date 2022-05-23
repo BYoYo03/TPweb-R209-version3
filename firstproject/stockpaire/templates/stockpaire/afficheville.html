@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> fiche {{paire.nom}}</title>
-    {% load static %}
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{%static 'ajout.css' %}" type="text/css">
-</head>
-<body>
+{% extends "stockpaire/main.html" %}
+{% block Accueil %}
+Accueil
+{% endblock %}
+{% block content %}
 <h1> La ville de création est {{ville.nom}} </h1>
 <p> La quantité disponible est de {{ville.quantite}} </p>
-<a href="/stockpaire/ajoutville/{{ville.id}}/">Ajouter une paire</a>
+<a href="/stockpaire/ajoutpaire{{paire.id}}/">Ajouter une paire</a>
 <table>
     {% for l in liste1 %}
     <tr class="tableau"><td>{{l}}</td>
@@ -20,5 +15,4 @@
     </tr>
     {%endfor%}
 </table>
-</body>
-</html>
+{% endblock %}
