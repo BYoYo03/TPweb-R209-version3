@@ -4,16 +4,7 @@ Accueil
 {% endblock %}
 {% block content %}
 <h1> La ville de création est {{ville.nom}} </h1>
-<p> La quantité disponible est de {{ville.quantite}} </p>
-<a href="/stockpaire/ajoutpaire{{paire.id}}/">Ajouter une paire</a>
-<table>
-    {% for l in liste %}
-    <tr class="tableau"><td>{{l}}</td>
-        <td><a href="/stockpaire/delete/{{l.id}}">Supprimer</a></td>
-        <td><a href="/stockpaire/update/{{l.id}}">Update</a></td>
-        <td><a href="/stockpaire/affiche/{{l.id}}">Affiche</a></td>
-    </tr>
-    {%endfor%}
-</table>
+<p class="pqaun"> La quantité disponible est de {{ville.quantite}} </p>
+<a class="ajouter" href="/stockpaire/ajoutpaire{{paire.id}}/">Ajouter une paire</a>
 
 {% endblock %}
