@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> fiche {{paire.nom}}</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'ajout.css' %}" type="text/css">
+</head>
+<body>
+<h1> {{ville.nom}} </h1>
+<p> {{ville.quantite}}dispo. </p>
+<a href="/stockpaire/ajoutpaire/{{ville.id}}/">Ajouter une paire</a>
+</body>
+</html>

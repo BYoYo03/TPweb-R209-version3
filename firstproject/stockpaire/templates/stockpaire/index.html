@@ -1,0 +1,30 @@
+{% extends "stockpaire/main.html" %}
+{% block Accueil %}
+Accueil
+{% endblock %}
+{% block content %}
+
+<h1> Bienvenue voici quelques paires</h1>
+    <h2>Si vous voulez vous pouvez essayer d'en ajouter </h2>
+
+<table>
+    {% for l in liste %}
+    <tr class="tableau"><td>{{l}}</td>
+        <td><a href="/stockpaire/delete/{{l.id}}">Supprimer</a></td>
+        <td><a href="/stockpaire/update/{{l.id}}">Update</a></td>
+        <td><a href="/stockpaire/affiche/{{l.id}}">Affiche</a></td>
+    </tr>
+    {%endfor%}
+</table>
+
+    <table>
+    {% for l in liste1 %}
+    <tr class="tableau"><td>{{l}}</td>
+        <td><a href="/stockpaire/deletev/{{l.id}}">Supprimer</a></td>
+        <td><a href="/stockpaire/updateville/{{l.id}}">Update</a></td>
+        <td><a href="/stockpaire/afficheville/{{l.id}}">Affiche</a></td>
+    </tr>
+    {%endfor%}
+</table>
+
+{% endblock %}

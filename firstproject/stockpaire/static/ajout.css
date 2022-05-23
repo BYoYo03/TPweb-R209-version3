@@ -1,0 +1,25 @@
+
+body {
+margin: 0px;
+padding:0px;
+background: grey;
+color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+padding: 10px;
+background: white;
+}
+
+.nav2 {
+margin-right: 20px;
+}
+
+.nav1 {
+margin-right: 20px;
+}
+
+form {
+padding: 20px;
+}

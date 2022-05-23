@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> fiche {{paire.nom}}</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'ajout.css' %}" type="text/css">
+</head>
+<body>
+<h1> {{paire.nom}} </h1>
+<p> cette paire à été faite par {{paire.marque}} et est paru le {{paire.annee}}.De couleur {{paire.couleur}}. </p>
+</body>
+</html>
