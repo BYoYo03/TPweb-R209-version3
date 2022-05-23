@@ -7,7 +7,7 @@ Accueil
 <p> La quantité disponible est de {{ville.quantite}} </p>
 <a href="/stockpaire/ajoutpaire{{paire.id}}/">Ajouter une paire</a>
 <table>
-    {% for l in liste1 %}
+    {% for l in liste %}
     <tr class="tableau"><td>{{l}}</td>
         <td><a href="/stockpaire/delete/{{l.id}}">Supprimer</a></td>
         <td><a href="/stockpaire/update/{{l.id}}">Update</a></td>
@@ -15,4 +15,5 @@ Accueil
     </tr>
     {%endfor%}
 </table>
+
 {% endblock %}
