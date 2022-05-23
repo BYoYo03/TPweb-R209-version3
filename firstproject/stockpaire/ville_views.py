@@ -27,10 +27,9 @@ def ajoutpairev(request):
 
 def index(request):
     ville = list(models.ville.objects.all())
-
     return render(request, "stockpaire/index.html", {"liste1":ville})
 
-def affichev(request, id):
+def afficheville(request, id):
     ville = models.ville.objects.get(pk=id)
     return render(request,"stockpaire/afficheville.html",{"ville" : ville})
 

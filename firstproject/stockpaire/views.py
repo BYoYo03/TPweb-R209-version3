@@ -27,8 +27,8 @@ def ajoutpaire(request):
 
 def home(request):
     paires = list(models.paire.objects.all())
-
-    return render(request, "stockpaire/index.html", {"liste":paires})
+    ville = list(models.ville.objects.all())
+    return render(request, "stockpaire/index.html", {"liste":paires,"liste1": ville})
 
 def affiche(request, id):
     paire = models.paire.objects.get(pk=id)

@@ -7,4 +7,22 @@ Accueil
 <body>
 <h1 class="titre1"> {{paire.nom}} </h1>
 <p class="p1"> Cette paire à été faite par {{paire.marque}} et est paru le {{paire.annee}}, sa couleur princiaple est le {{paire.couleur}} et a été crée à {{ paire.ville }}. La paire est de type {{ paire.type }}.</p>
+
+<table>
+    {% for l in liste1 %}
+    <tr class="tableau"><td>{{l}}</td>
+        <td><a href="/stockpaire/delete/{{l.id}}">Supprimer</a></td>
+        <td><a href="/stockpaire/update/{{l.id}}">Update</a></td>
+        <td><a href="/stockpaire/affiche/{{l.id}}">Affiche</a></td>
+    </tr>
+    {%endfor%}
+</table>
+
+<table>
+    {% for i in liste1 %}
+    <tr class="tableau"><td>{{i}}</td>
+        <td><a href="/stockpaire/deletev/{{i.id}}">Supprimer</a></td>
+    </tr>
+    {%endfor%}
+</table>
 {% endblock %}

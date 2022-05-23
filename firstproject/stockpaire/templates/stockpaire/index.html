@@ -16,5 +16,15 @@ Accueil
     </tr>
     {%endfor%}
 </table>
+<br>
+<table>
+    {% for i in liste1 %}
+    <tr class="tableau"><td>{{i}}</td>
+        <td><a href="/stockpaire/deletev/{{i.id}}">Supprimer</a></td>
+         <td><a href="/stockpaire/updateville/{{i.id}}">Update</a></td>
+        <td><a href="/stockpaire/afficheville/{{i.id}}">Affiche</a></td>
+    </tr>
+    {%endfor%}
+</table>
 
 {% endblock %}

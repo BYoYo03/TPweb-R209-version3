@@ -14,8 +14,8 @@ urlpatterns = [
     path('',ville_views.index),
     path('traitementv/',ville_views.traitementv),
     path('ajoutpairev/',ville_views.ajoutpairev),
-    path("affichev/<int:id>/",ville_views.affichev),
+    path("afficheville/<int:id>/",ville_views.afficheville),
     path("deletev/<int:id>",ville_views.deletev),
-    path("updatev/<int:id>",ville_views.updatev),
-    path("updatepairev/<int:id>",ville_views.updatepairev),
+    path("updateville/<int:id>",ville_views.updatev),
+    path("updatepaireville/<int:id>",ville_views.updatepairev),
 ]
