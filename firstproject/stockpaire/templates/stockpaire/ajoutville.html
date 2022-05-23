@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Formulaire</title>
-    {% load static %}
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{%static 'ajout.css' %}" type="text/css">
-</head>
-<body>
-<nav> <a class="nav1" href="/stockpaire/home">Accueil</a><a class="nav2" href="/stockpaire/ajoutpaire">Ajouter une paire</a></nav>
+{% extends "stockpaire/main.html" %}
+{% block Accueil %}
+Ajout Paire
+{% endblock %}
+{% block content %}
+
 <form method="post" action="/stockpaire/traitementv/">
         {% csrf_token %} <!-- code permettant de protéger votre application en évitant
 de rejouer un formulaire avec des droits différents -->
         {{ form.as_ul }} <!-- permet d'afficher tous les champs sous forme d'une liste
 -->
-        <input type="submit" value="envoyer les données"\>
+        <input type="submit" class ="boton" value="Envoyer la requête"\>
     </form>
-</body>
-</html>
+{% endblock %}
